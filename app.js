@@ -4,19 +4,19 @@ const app = express();
 app.use(express.static('public'));
 
 app.get('/', (request, res, next) => {
-    res.sendFile(__dirname + '/pages/home.html')
+    res.sendFile(__dirname + '/views/home.html')
   })
 
 app.get('/about', (request, res, next) => {
-    res.sendFile(__dirname + '/pages/about.html')
+    res.sendFile(__dirname + '/views/about.html')
   })
 
 app.get('/works', (request, res, next) => {
-    res.sendFile(__dirname + '/pages/works.html')
+    res.sendFile(__dirname + '/views/works.html')
   })
 
 app.get('/gallery', (request, res, next) => {
-    res.sendFile(__dirname + '/pages/gallery.html')
+    res.sendFile(__dirname + '/views/gallery.html')
   })
 
 
